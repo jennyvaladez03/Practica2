@@ -2,7 +2,7 @@
 #include <stdlib.h> 
 
 void main(){
-    printf("=== Calculadora de Promedio Dinámica ===\n\n");
+    printf("=== Calculadora de Promedio DinÃ¡mica ===\n\n");
 
     int opcion = 0;
     float *calificaciones = NULL;   
@@ -21,9 +21,9 @@ void main(){
                 while (respuesta == 's'){
                     int n;
                     if (total == 0)
-                        printf("\n¿Cuantas calificaciones desea ingresar? ");
+                        printf("\nÂ¿Cuantas calificaciones desea ingresar? ");
                     else
-                        printf("\n¿Cuantas calificaciones mas desea ingresar? ");
+                        printf("\nÂ¿Cuantas calificaciones mas desea ingresar? ");
 
                     while (scanf("%d", &n) != 1 || n <= 0){
                         printf("Entrada invalida. Ingrese un numero entero positivo: ");
@@ -62,7 +62,7 @@ void main(){
                         printf("Estado: REPROBADO\n");
 
                     do{ //repetimos el ciclo para preguntar y leer las nuevas calificaciones 
-                        printf("\n¿Desea agregar mas calificaciones? (s/n): ");
+                        printf("\nÂ¿Desea agregar mas calificaciones? (s/n): ");
                         scanf(" %c", &respuesta);
                         if (respuesta != 's' && respuesta != 'n') {
                             printf("Respuesta invalida. Ingrese 's' o 'n'.\n");
@@ -84,9 +84,10 @@ void main(){
             break;
 
         default:
-            // opción del usuario inválida
+            // opciÃ³n del usuario invÃ¡lida
             printf("\n=== Opcion invalida === \nPor favor seleccione una opcion del menu:\n");
-            while (getchar() != '\n'); /
+            while (getchar() != '\n'); 
         }
     }
 }
+
